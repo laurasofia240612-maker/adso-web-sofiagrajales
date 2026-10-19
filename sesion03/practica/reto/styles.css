@@ -1,0 +1,63 @@
+/*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+body{
+  font-family: "Bitcount Ink", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 15px;
+  font-style: 10px;
+}
+
+hr{
+    background-color: #af3fb9;
+    height: 5px;
+    width: 50%;
+    border-style: double;
+}
+
+h1{
+     color: hsl(278, 68%, 44%);
+     font-size: 2.5rem;
+}
+.destacado. 
+   {
+    bitcount-ink-uniquifier 
+   font-family: "Bitcount_Ink", system-ui;
+   font-optical-sizing auto
+   font-weight weight>
+   font-style normal
+   font-variation-settings
+
+}
+/* etiqueta # */
+
+#ADSO{ 
+    background-color: #7f96ff;
+}
+/* "Sobre mi:*/
+nav a{
+    text-decoration: none ; 
+    color:black
+
+    /* etiqueta h1 */
+h1{
+    color: #112063; 
+} 
+/* etiquetas agrupadas*/   
+} 
+h2, h3, h4{
+    color: #112063;
+}
+/*imagen */
+.Sofi{
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+#portada {
+  border: 4px solid #7f96ff;
+  border-radius: 12px;
+}
+
