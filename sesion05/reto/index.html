@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción a Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Registro de Inscripción</h1>
+        <form action="#" class="formulario" id="formInscripcion">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3"
+                           title="Escribe tu nombre completo (mínimo 10 caracteres)">
+                    <small id="error-nombre" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="documento">Documento</label>
+                    <input type="text" id="documento" name="documento" inputmode="numeric" required
+                           pattern="[0-9]{6,10}" minlength="6" maxlength="10"
+                           title="Solo números, entre 6 y 10 dígitos">
+                    <small id="error-documento" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required autocomplete="email"
+                           title="Escribe un correo válido, por ejemplo nombre@correo.com">
+                    <small id="error-correo" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Celular</label>
+                    <input type="tel" id="telefono" name="telefono" required
+                           pattern="3[0-9]{9}" maxlength="10" autocomplete="tel"
+                           title="Celular de 10 dígitos que empiece por 3">
+                    <small id="error-telefono" class="error"></small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Curso</legend>
+
+                <div class="campo">
+                    <label for="programa">Programa</label>
+                    <select name="programa" id="programa" required>
+                        <option value="">Elige un programa</option>
+                        <option value="ADSO">ADSO</option>
+                        <option value="Telecomunicaciones">Telecomunicaciones</option>
+                        <option value="Odontologia">Odontología</option>
+                    </select>
+                    <small id="error-programa" class="error"></small>
+                </div>
+
+                <fieldset class="grupo">
+                    <legend>Jornada</legend>
+                    <label for="manana" class="opcion">
+                        <input type="radio" name="jornada" id="manana" value="manana" required>Mañana
+                    </label>
+                    <label for="tarde" class="opcion">
+                        <input type="radio" name="jornada" id="tarde" value="tarde">Tarde
+                    </label>
+                    <label for="noche" class="opcion">
+                        <input type="radio" name="jornada" id="noche" value="noche">Noche
+                    </label>
+                    <small id="error-jornada" class="error"></small>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="terminos" class="opcion">
+                        <input type="checkbox" name="terminos" id="terminos" required>
+                        Autorizo el tratamiento de mis datos personales
+                    </label>
+                    <small id="error-terminos" class="error"></small>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="boton">Registrarme</button>
+        </form>
+
+        <section id="resumen"></section>
+    </main>
+    
+</body>
+</html>
