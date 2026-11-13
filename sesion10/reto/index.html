@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilos Sofi</title>
+  <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+  <main class="guia">
+    <h1>Guía de estilos</h1>
+
+    
+    <section class="tarjeta seccion">
+      <h2>1. Paleta</h2>
+      <div class="paleta">
+        <div class="muestra" style="background: var(--principal); color: #fff;">--principal</div>
+        <div class="muestra" style="background: var(--morado-pastel);">--morado-pastel</div>
+        <div class="muestra" style="background: var(--amarillo);">--amarillo</div>
+        <div class="muestra" style="background: var(--amarillo-pastel);">--amarillo-pastel</div>
+        <div class="muestra" style="background: var(--cafe); color: #fff;">--cafe</div>
+        <div class="muestra" style="background: var(--cafe-claro);">--cafe-claro</div>
+      </div>
+    </section>
+
+    
+    <section class="tarjeta seccion">
+      <h2>2. Tipografía</h2>
+      <h1>Título h1</h1>
+      <h2>Título h2</h2>
+      <h3>Título h3</h3>
+      <p>Este es un párrafo con un <a href="#">enlace de ejemplo</a> dentro del texto.</p>
+      <small>Texto pequeño de apoyo.</small>
+    </section>
+
+    
+    <section class="tarjeta seccion">
+      <h2>3. Botones</h2>
+      <div class="fila">
+        <button class="boton">Principal</button>
+        <button class="boton boton-secundario">Secundario</button>
+        <button class="boton boton-peligro">Peligro</button>
+        <button class="boton" disabled>Deshabilitado</button>
+      </div>
+    </section>
+
+    
+    <section class="tarjeta seccion">
+      <h2>4. Alertas e insignias</h2>
+      <p class="alerta alerta-exito">✅ Alerta de éxito.</p>
+      <p class="alerta alerta-error">⚠️ Alerta de error.</p>
+      <p class="alerta alerta-aviso">🔔 Alerta de aviso.</p>
+      <p class="alerta alerta-info">ℹ️ Alerta de información.</p>
+      <div class="fila">
+        <span class="insignia insignia-nuevo">Nuevo</span>
+        <span class="insignia insignia-oferta">Oferta</span>
+        <span class="insignia insignia-agotado">Agotado</span>
+      </div>
+    </section>
+
+    
+    <section class="tarjeta seccion">
+      <h2>5. Estados</h2>
+      <p class="cargando">Cargando...</p>
+      <p class="hecha">Texto con la clase hecha</p>
+      <label for="correo" class="oculto-visual">Correo</label>
+      <input type="text" id="correo" class="error" placeholder="Correo electrónico">
+      <small class="error">Escribe un correo válido.</small>
+      <p><button class="boton activo">Botón activo</button></p>
+      <!-- Este párrafo no se ve porque tiene la clase .oculto, que aplica display: none !important -->
+      <p class="oculto">Este párrafo está oculto.</p>
+    </section>
+  </main>
+</body>
+</html>

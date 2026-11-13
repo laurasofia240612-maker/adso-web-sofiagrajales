@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis tareas</title>
+  <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+  <main class="app-tareas tarjeta">
+
+
+    <header class="app-tareas-encabezado">
+      <h1>Mis tareas:</h1>
+
+      <form class="app-tareas-form">
+        <label for="nuevaTarea" class="oculto-visual">Elige una tarea</label>
+        <select id="nuevaTarea">
+          <option value="">Elige una tarea...</option>
+          <option value="limpiar">Limpiar la casa</option>
+          <option value="cuarto">Organizar mi cuarto</option>
+          <option value="ropa">Tender ropa</option>
+          <option value="estudiar">Estudiar</option>
+          <option value="cocinar">Cocinar</option>
+          <option value="dormir">Dormir</option>
+        </select>
+        <button type="submit" class="boton">Agregar</button>
+      </form>
+
+    
+      <p class="alerta alerta-error oculto" role="alert">
+    "Dando de lo que tengo es como lo mantengo." 
+      </p>
+    </header>
+
+    <!-- Lista de tareas -->
+    <ul class="lista-tareas">
+      <li class="tarea">
+        <input type="checkbox" id="t1">
+        <label for="t1">Limpiar la casa</label>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <input type="checkbox" id="t2" checked>
+        <label for="t2">Organizar mi cuarto</label>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <input type="checkbox" id="t3" checked>
+        <label for="t3">Tender ropa</label>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <input type="checkbox" id="t4" checked>
+        <label for="t4">Organizarme</label>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <input type="checkbox" id="t5" checked>
+        <label for="t5">Estudiar</label>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <input type="checkbox" id="t6" checked>
+        <label for="t6">Cocinar</label>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea">
+        <input type="checkbox" id="t7">
+        <label for="t7">Destender cama</label>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <input type="checkbox" id="t8" checked>
+        <label for="t8">Cepillarme</label>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea">
+        <input type="checkbox" id="t9">
+        <label for="t9">Dormir</label>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+    </ul>
+
+    
+    <p class="contador">3 pendientes de 9</p>
+
+  </main>
+</body>
+</html>
