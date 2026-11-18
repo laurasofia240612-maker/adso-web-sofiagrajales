@@ -1,0 +1,47 @@
+/* La fuente y los colores de la marca */
+:root {
+  --bs-body-font-family: "Poppins", Arial, sans-serif;
+  --bs-body-bg: #fff7fa;
+  --bs-link-color: #c2527a;
+  --bs-link-hover-color: #9d3a5e;
+}
+
+/* Que el menú fijo no tape los títulos al navegar */
+html {
+  scroll-padding-top: 70px;
+}
+
+.navbar {
+  background-color: #f8c8dc;
+}
+
+footer {
+  background-color: #f8c8dc;
+}
+
+/* El botón principal con los colores de la marca */
+.btn-primary {
+  --bs-btn-bg: #c2527a;
+  --bs-btn-border-color: #c2527a;
+  --bs-btn-hover-bg: #9d3a5e;
+  --bs-btn-hover-border-color: #9d3a5e;
+  --bs-btn-active-bg: #82304e;
+  --bs-btn-active-border-color: #82304e;
+  --bs-btn-focus-shadow-rgb: 194, 82, 122;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #9d3a5e;
+  --bs-btn-border-color: #c2527a;
+  --bs-btn-hover-bg: #c2527a;
+  --bs-btn-hover-border-color: #c2527a;
+  --bs-btn-active-bg: #9d3a5e;
+  --bs-btn-active-border-color: #9d3a5e;
+  --bs-btn-focus-shadow-rgb: 194, 82, 122;
+}
+
+/* Que el foco de los campos no sea azul */
+.form-control:focus {
+  border-color: #c2527a;
+  box-shadow: 0 0 0 0.25rem rgba(194, 82, 122, 0.25);
+}
