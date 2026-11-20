@@ -71,17 +71,17 @@ main {
 
 #contacto {
   background-color: #4c2caa;
-  color: #4c2caa;
+  color: #7d69b9;
   text-align: center;
   padding: 16px;
 }
 
 #contacto h2 {
-  color: #4c2caa;
-  border-bottom-color: #4c2caa;
+  color: #7d69b9;
+  border-bottom-color: #7d69b9;
   display: inline-block;
 }
 
 #contacto a {
-  color: #4c2caa;
+  color: #7d69b9;
 }
