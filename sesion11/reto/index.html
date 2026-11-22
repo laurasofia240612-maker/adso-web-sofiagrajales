@@ -41,13 +41,13 @@
       </div>
       <img src="img/portada.webp"
            alt="Productos de maquillaje y cabello del emprendimiento"
-           width="600" height="400">
+           width="600" height="400" loading="lazy">
     </section>
 
     <section class="beneficios" id="beneficios">
       <h2>¿Por qué elegirnos?</h2>
       <div class="rejilla">
-        <article class="tarjeta">
+        <article class="beneficio">
           <span class="insignia insignia-nuevo">Nuevo</span>
           <h3>🚚 Domicilio</h3>
           <p>Entregamos en todo el valle de Aburrá.</p>
@@ -95,7 +95,7 @@
     <p>Medellín, Antioquia</p>
   </footer>
 
-  
+  <!-- ===== BOTONES FLOTANTES (como la práctica) ===== -->
   <div class="social-float">
 
     <a class="social-btn social-btn--ig"
@@ -122,8 +122,16 @@
 
   </div>
 
-  
+  <!-- ===== VENTANA DE PROMOCIÓN (modal con :target) ===== -->
   <div id="promo" class="modal" role="dialog" aria-modal="true" aria-labelledby="promo-titulo">
     <div class="modal-caja">
       <a href="#inicio" class="modal-cerrar" aria-label="Cerrar">✕</a>
       <h2 id="promo-titulo">🎉 2x1 en productos seleccionados</h2>
+      <p>Solo este fin de semana, en pedidos por WhatsApp.</p>
+      <a class="boton" href="https://wa.me/573015650045">Pedir por WhatsApp</a>
+      <a class="boton" href="https://www.instagram.com/ls__m24/" target="_blank" rel="noopener">Síguenos en Instagram</a>
+    </div>
+  </div>
+
+</body>
+</html>
