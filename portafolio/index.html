@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sofía Grajales · Portafolio web</title>
+  <meta name="description" content="Portafolio de Laura Sofía Grajales, estudiante de Análisis y Desarrollo de Software: retos de HTML, CSS y Bootstrap.">
+
+  <meta property="og:title" content="Sofía Grajales · Portafolio web">
+  <meta property="og:description" content="Mis mejores retos de HTML, CSS y Bootstrap.">
+  <meta property="og:image" content="https://laurasofia240612-maker.github.io/adso-web-sofiagrajales/img/proyecto-sesion11.webp">
+  <meta property="og:url" content="https://laurasofia240612-maker.github.io/adso-web-sofiagrajales/">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <a class="logo" href="#inicio">Sofí</a>
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section class="portada" id="inicio">
+      <h1>Sofía Grajales</h1>
+      <p class="frase">Estudiante de Análisis y Desarrollo de Software en construcción de páginas web.</p>
+      <a class="boton" href="#proyectos">Ver mis proyectos</a>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="seccion" id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy estudiante del Tecnólogo en Análisis y Desarrollo de Software en el SENA.
+        En este curso aprendí a maquetar con HTML, a darle estilo con CSS (Flexbox, Grid y diseño responsive)
+        y a usar Bootstrap.
+      </p>
+      <p>
+        Tengo un emprendimiento de maquillaje y productos para el cabello llamado G - EM,
+        y varios de mis proyectos son la página de ese negocio.
+      </p>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="seccion seccion-rosa" id="proyectos">
+      <h2>Mis proyectos</h2>
+      <div class="rejilla">
+
+        <article class="proyecto">
+          <img src="img/proyecto-sesion06.webp" width="600" height="400" loading="lazy"
+               alt="Captura de la vitrina de maquillaje hecha con Flexbox">
+          <div class="proyecto-cuerpo">
+            <h3>Vitrina de maquillaje</h3>
+            <p>Sesión 6 · Tarjetas de productos con Flexbox.</p>
+            <div class="acciones">
+              <a class="boton" href="https://laurasofia240612-maker.github.io/adso-web-sofiagrajales/sesion06/reto/" target="_blank" rel="noopener">Ver</a>
+              <a class="boton boton-claro" href="https://github.com/laurasofia240612-maker/adso-web-sofiagrajales/tree/main/sesion06/reto" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <img src="img/proyecto-sesion08.webp" width="600" height="400" loading="lazy"
+               alt="Captura de la landing responsive de G - EM">
+          <div class="proyecto-cuerpo">
+            <h3>Landing responsive</h3>
+            <p>Sesión 8 · Página mobile first con media queries.</p>
+            <div class="acciones">
+              <a class="boton" href="https://laurasofia240612-maker.github.io/adso-web-sofiagrajales/sesion08/reto/" target="_blank" rel="noopener">Ver</a>
+              <a class="boton boton-claro" href="https://github.com/laurasofia240612-maker/adso-web-sofiagrajales/tree/main/sesion08/reto" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <img src="img/proyecto-sesion11.webp" width="600" height="400" loading="lazy"
+               alt="Captura de la landing lista para publicar con modal y botones flotantes">
+          <div class="proyecto-cuerpo">
+            <h3>Landing lista para publicar</h3>
+            <p>Sesión 11 · Encabezado sticky, botones flotantes y modal.</p>
+            <div class="acciones">
+              <a class="boton" href="https://laurasofia240612-maker.github.io/adso-web-sofiagrajales/sesion11/reto/" target="_blank" rel="noopener">Ver</a>
+              <a class="boton boton-claro" href="https://github.com/laurasofia240612-maker/adso-web-sofiagrajales/tree/main/sesion11/reto" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <img src="img/proyecto-sesion13.webp" width="600" height="400" loading="lazy"
+               alt="Captura de la landing de G - EM hecha con Bootstrap">
+          <div class="proyecto-cuerpo">
+            <h3>Landing con Bootstrap</h3>
+            <p>Sesión 13 · La misma landing rehecha con Bootstrap.</p>
+            <div class="acciones">
+              <a class="boton" href="https://laurasofia240612-maker.github.io/adso-web-sofiagrajales/sesion13/reto/" target="_blank" rel="noopener">Ver</a>
+              <a class="boton boton-claro" href="https://github.com/laurasofia240612-maker/adso-web-sofiagrajales/tree/main/sesion13/reto" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONTACTO -->
+  <footer class="pie" id="contacto">
+    <h2>Contacto</h2>
+    <p>Correo: <a href="mailto:gmsofi0719@gmail.com">gmsofi0719@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/573015650045" target="_blank" rel="noopener">+57 3015650045</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/ls__m24/" target="_blank" rel="noopener">@ls__m24</a></p>
+    <p>GitHub: <a href="https://github.com/laurasofia240612-maker" target="_blank" rel="noopener">laurasofia240612-maker</a></p>
+    <p>Medellín, Antioquia</p>
+  </footer>
+
+</body>
+</html>
