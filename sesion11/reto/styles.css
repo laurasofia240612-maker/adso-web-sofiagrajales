@@ -1,4 +1,4 @@
-/* ===== BASE (celular, sin media query) ===== */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem; /* el encabezado fijo no tapa las secciones */
+  scroll-padding-top: 5rem; 
 }
 
 body {
@@ -36,7 +36,7 @@ h1, h2, h3 {
   outline-offset: 2px;
 }
 
-/* ===== ENCABEZADO (sticky) ===== */
+
 .encabezado {
   position: sticky;
   top: 0;
@@ -69,7 +69,7 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-/* ===== BOTONES ===== */
+
 .boton {
   display: inline-block;
   padding: 12px 24px;
@@ -84,14 +84,14 @@ h1, h2, h3 {
   background: #8f3355;
 }
 
-/* Botón "Ver promoción" que está al inicio del main */
+
 main > .boton {
   display: block;
   width: fit-content;
   margin: 16px auto;
 }
 
-/* ===== PORTADA ===== */
+
 .portada {
   display: flex;
   flex-direction: column;
@@ -115,7 +115,7 @@ main > .boton {
   margin-bottom: 16px;
 }
 
-/* ===== BENEFICIOS ===== */
+
 .beneficios {
   padding: 24px 16px;
 }
@@ -146,17 +146,17 @@ main > .boton {
   color: #a63f64;
 }
 
-/* Insignia en la esquina de la tarjeta */
+
 .beneficio {
-  position: relative; /* el tablero de corcho */
+  position: relative; 
 }
 
 .beneficio h3 {
-  padding-right: 4.5rem; /* el título no pasa por debajo de la insignia */
+  padding-right: 4.5rem; 
 }
 
 .beneficio .insignia {
-  position: absolute; /* el post-it */
+  position: absolute; 
   top: 0.75rem;
   right: 0.75rem;
 }
@@ -174,7 +174,7 @@ main > .boton {
   color: #1d4ed8;
 }
 
-/* ===== CÓMO PEDIR ===== */
+
 .pedir {
   padding: 24px 16px;
   background: #fde8f0;
@@ -190,9 +190,9 @@ main > .boton {
   margin-bottom: 10px;
 }
 
-/* ===== PIE ===== */
+
 .pie {
-  padding: 24px 16px 10rem; /* espacio abajo para que los botones flotantes no tapen el contacto */
+  padding: 24px 16px 10rem; 
   text-align: center;
   background: #4a3040;
   color: #fff;
@@ -206,20 +206,20 @@ main > .boton {
   color: #f8c8dc;
 }
 
-/* ===== MODAL CON :target ===== */
+
 .modal {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6); /* fondo oscuro */
+  background: rgba(0, 0, 0, 0.6); 
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  z-index: 10000; /* encabezado 10 < botones flotantes 9999 < modal 10000 */
+  z-index: 10000; 
 }
 
 .modal:target {
-  display: flex; /* se abre cuando la URL termina en #promo */
+  display: flex; 
 }
 
 .modal-caja {
@@ -253,7 +253,7 @@ main > .boton {
   color: #4a3040;
 }
 
-/* ===== TABLETA (768px en adelante) ===== */
+
 @media (min-width: 768px) {
   .encabezado {
     flex-direction: row;
@@ -272,14 +272,15 @@ main > .boton {
     padding: 40px 32px;
   }
 
-  .portada-texto,
-  .portada img {
+  .portada-texto {
     flex: 1;
   }
 
+  
   .portada img {
-    max-width: none;
-    margin: 0;
+    flex: 0 1 380px;
+    max-width: 380px;
+    margin: 0 auto;
   }
 
   .portada-texto h1 {
@@ -291,7 +292,7 @@ main > .boton {
   }
 }
 
-/* ===== ESCRITORIO (1024px en adelante) ===== */
+
 @media (min-width: 1024px) {
   .portada,
   .beneficios,
@@ -299,6 +300,11 @@ main > .boton {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .portada img {
+    flex-basis: 420px;
+    max-width: 420px;
   }
 
   .portada-texto h1 {
@@ -310,7 +316,7 @@ main > .boton {
   }
 }
 
-/* Respeta a quienes prefieren menos movimiento */
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
